@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#2d312f", "on-primary-container": "#f6fff4", "surface-variant": "#e0e3e0", "primary-fixed": "#93f8ae", "on-error": "#ffffff", "tertiary-fixed-dim": "#8cd7a3", "on-error-container": "#93000a", "on-primary-fixed": "#00210d", "on-secondary-fixed-variant": "#653e00", "on-primary-fixed-variant": "#005228", "tertiary": "#1c693f", "on-primary": "#ffffff", "tertiary-fixed": "#a7f3be", "primary-fixed-dim": "#77db94", "surface-container-lowest": "#ffffff", "surface-tint": "#006d37", "surface-container-high": "#e6e9e5", "secondary": "#855300", "surface-container": "#ecefeb", "surface-container-low": "#f1f4f1", "outline": "#6f7a6f", "on-surface-variant": "#3f4940", "on-tertiary-container": "#f6fff4", "on-surface": "#181c1a", "secondary-fixed-dim": "#ffb95f", "on-secondary-fixed": "#2a1700", "error": "#ba1a1a", "surface-container-highest": "#e0e3e0", "on-secondary": "#ffffff", "outline-variant": "#becabd", "inverse-on-surface": "#eef1ee", "surface-bright": "#f7faf6", "inverse-primary": "#77db94", "secondary-container": "#fea619", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#00522d", "primary-container": "#188648", "tertiary-container": "#398256", "on-secondary-container": "#684000", "secondary-fixed": "#ffddb8", "surface-dim": "#d8dbd7", "on-background": "#181c1a", "background": "#f7faf6", "on-tertiary-fixed": "#00210f", "primary": "#006a36", "surface": "#f7faf6", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "1rem", "gutter": "1rem", "space-xl": "2rem", "gutter-mobile": "0.75rem" }, fontFamily: { "headline-sm": ["Epilogue"], "body-lg": ["Inter"], "headline-lg": ["Epilogue"], "display-lg": ["Epilogue"], "label-md": ["Inter"], "headline-md": ["Epilogue"], "label-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(24,28,26,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-11 h-11 flex items-center justify-center rounded-xl bg-primary-container text-on-primary-container shadow-sm"><span class="material-symbols-outlined text-[24px]">lunch_dining</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">Scanner</span><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wide">Staff</span></div><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>Lycée Univ Ouaga</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications de service" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col flex-1 relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Demo State Switcher (Embedded interactive control for review) -->
+<div class="px-margin-mobile py-2 bg-surface-container-high flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">État vue staff</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-full shadow-sm">
+<button class="state-tab px-2.5 py-1 rounded-full font-label-sm text-label-sm transition-all bg-primary text-on-primary font-bold" id="btn-nominal" onclick="switchState('nominal')" type="button">Nominal</button>
+<button class="state-tab px-2.5 py-1 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" id="btn-loading" onclick="switchState('loading')" type="button">Chargement</button>
+<button class="state-tab px-2.5 py-1 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" id="btn-empty" onclick="switchState('empty')" type="button">Vide</button>
+<button class="state-tab px-2.5 py-1 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" id="btn-error" onclick="switchState('error')" type="button">Erreur</button>
+</div>
+</div>
+<!-- Content Containers for each State -->
+<!-- 1. NOMINAL STATE -->
+<div class="flex flex-col w-full space-y-space-md p-margin-mobile" id="state-nominal">
+<!-- Screen Sub-header & Service Live Status -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Commandes du jour</h1>
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-primary-fixed text-on-primary-fixed rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse inline-block"></span>
+<span class="font-label-sm text-label-sm font-bold">En direct</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+          Jeudi 24 Octobre
+        </span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-medium">
+          Déjeuner : 11h30 - 14h00
+        </span>
+</div>
+</div>
+<!-- Summary Header Card ("Synthèse de préparation / Portions") -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">skillet</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Synthèse cuisine</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">180 repas commandés au total</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">76% prêts</span>
+</div>
+<!-- Main Global Progress Bar -->
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 76%"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+          137 portions prêtes
+        </span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>
+          43 en préparation
+        </span>
+</div>
+<!-- Portion Breakdown Grid -->
+<div class="flex flex-col gap-2 pt-1">
+<!-- Dish 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">rice_bowl</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Riz Gras Poulet &amp; Alloco</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">62 prêtes • 22 en cours</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface ml-2">84</span>
+</div>
+<!-- Dish 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">soup_kitchen</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Tô maïs &amp; Gombo bœuf</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">45 prêtes • 13 en cours</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface ml-2">58</span>
+</div>
+<!-- Dish 3 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">kebab_dining</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Brochettes &amp; Igname</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">30 prêtes • 8 en cours</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface ml-2">38</span>
+</div>
+</div>
+</div>
+<!-- Time Slot Horizontal Switcher (Créneaux de retrait) -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Créneaux de retrait</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sélection active</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-margin-mobile px-margin-mobile">
+<button class="slot-tab flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all" type="button">
+<span>13:00</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px]">45</span>
+</button>
+<button class="slot-tab flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shrink-0 shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>13:15</span>
+<span class="px-2 py-0.5 rounded-full bg-on-primary text-primary font-bold text-[11px]">50</span>
+</button>
+<button class="slot-tab flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all" type="button">
+<span>13:30</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px]">48</span>
+</button>
+<button class="slot-tab flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 active:scale-95 transition-all" type="button">
+<span>13:45</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px]">37</span>
+</button>
+</div>
+</div>
+<!-- Search & Bulk Action Area -->
+<div class="flex flex-col gap-2.5">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-12 pl-11 pr-10 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-low shadow-sm" id="order-search" oninput="handleSearch(this.value)" placeholder="Rechercher nom, classe, matricule..." type="text"/>
+<button class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-1" id="clear-search-btn" onclick="clearSearch()" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Quick Action: Bulk mark ready for the active slot -->
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center gap-2 font-label-lg text-label-lg active:scale-[0.98] transition-all shadow-sm" id="bulk-btn" onclick="markAllReady()" type="button">
+<span class="material-symbols-outlined text-[20px]">done_all</span>
+<span>Marquer les 13 restants comme prêts</span>
+</button>
+</div>
+<!-- Orders List (Slot 13:15) -->
+<div class="flex flex-col gap-3" id="orders-container">
+<!-- Order 1: En préparation -->
+<div class="order-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3 transition-all" data-class="l2 informatique" data-id="etu-9412" data-name="awa ouedraogo">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0 font-headline-sm text-headline-sm font-bold">
+              AO
+            </div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Awa OUÉDRAOGO</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">L2 Informatique • <span class="font-mono text-primary font-semibold">ETU-9412</span></p>
+</div>
+</div>
+<span class="status-badge px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+            En préparation
+          </span>
+</div>
+<!-- Meal Details -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">rice_bowl</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Riz Gras Poulet &amp; Alloco</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm shrink-0">Sans piment</span>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="btn-status h-12 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-all" onclick="updateOrderStatus(this, 'prep')" type="button">
+<span class="material-symbols-outlined text-[18px]">soup_kitchen</span>
+            En cuisine
+          </button>
+<button class="btn-status h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 font-bold active:scale-95 transition-all shadow-sm" onclick="updateOrderStatus(this, 'ready')" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+            Prête
+          </button>
+</div>
+</div>
+<!-- Order 2: Prête -->
+<div class="order-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3 transition-all" data-class="bts compta" data-id="etu-8841" data-name="moussa traore">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0 font-headline-sm text-headline-sm font-bold">
+              MT
+            </div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Moussa TRAORÉ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">BTS Compta • <span class="font-mono text-primary font-semibold">ETU-8841</span></p>
+</div>
+</div>
+<span class="status-badge px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            Prête
+          </span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">soup_kitchen</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Tô de maïs &amp; Sauce gombo bœuf</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm shrink-0">Standard</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="btn-status h-12 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-all" onclick="updateOrderStatus(this, 'prep')" type="button">
+<span class="material-symbols-outlined text-[18px]">soup_kitchen</span>
+            En cuisine
+          </button>
+<button class="btn-status h-12 rounded-xl bg-tertiary-container text-on-tertiary-container font-label-md text-label-md flex items-center justify-center gap-1 font-bold active:scale-95 transition-all shadow-sm" onclick="updateOrderStatus(this, 'retrieved')" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+            Remis
+          </button>
+</div>
+</div>
+<!-- Order 3: Reçue (En attente de démarrage) -->
+<div class="order-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3 transition-all" data-class="l1 droit" data-id="etu-7721" data-name="fatou kabore">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high flex items-center justify-center text-on-surface shrink-0 font-headline-sm text-headline-sm font-bold">
+              FK
+            </div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Fatou KABORÉ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">L1 Droit • <span class="font-mono text-primary font-semibold">ETU-7721</span></p>
+</div>
+</div>
+<span class="status-badge px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">receipt</span>
+            Reçue
+          </span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">kebab_dining</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Brochettes &amp; Frites igname</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm shrink-0">Sans arachide</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="btn-status h-12 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center justify-center gap-1 font-bold active:scale-95 transition-all" onclick="updateOrderStatus(this, 'prep')" type="button">
+<span class="material-symbols-outlined text-[18px]">soup_kitchen</span>
+            En cuisine
+          </button>
+<button class="btn-status h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 font-bold active:scale-95 transition-all shadow-sm" onclick="updateOrderStatus(this, 'ready')" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+            Prête
+          </button>
+</div>
+</div>
+<!-- Order 4: Récupérée (Déjà scannée et servie) -->
+<div class="order-card bg-surface-container-lowest/80 rounded-xl p-space-md shadow-sm flex flex-col gap-3 transition-all opacity-70" data-class="master m1 gestion" data-id="etu-5310" data-name="ibrahim sawadogo">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant flex items-center justify-center text-on-surface-variant shrink-0 font-headline-sm text-headline-sm font-bold">
+              IS
+            </div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Ibrahim SAWADOGO</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">M1 Gestion • <span class="font-mono text-outline font-semibold">ETU-5310</span></p>
+</div>
+</div>
+<span class="status-badge px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+            Récupérée
+          </span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-outline text-[20px]">rice_bowl</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Riz Gras Poulet &amp; Alloco</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Servi à 13h12</span>
+</div>
+<div class="flex items-center justify-center py-1 text-on-surface-variant font-label-sm text-label-sm gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+          Validé par QR Code staff
+        </div>
+</div>
+</div>
+</div>
+<!-- 2. LOADING SKELETON STATE -->
+<div class="hidden flex flex-col w-full space-y-space-md p-margin-mobile" id="state-loading">
+<!-- Skeleton Header -->
+<div class="flex flex-col gap-2">
+<div class="w-48 h-7 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-32 h-4 bg-surface-container rounded animate-pulse"></div>
+</div>
+<!-- Skeleton Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="w-36 h-6 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-16 h-6 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full animate-pulse"></div>
+<div class="flex flex-col gap-2 mt-2">
+<div class="h-12 bg-surface-container rounded-lg animate-pulse"></div>
+<div class="h-12 bg-surface-container rounded-lg animate-pulse"></div>
+<div class="h-12 bg-surface-container rounded-lg animate-pulse"></div>
+</div>
+</div>
+<!-- Skeleton Slots -->
+<div class="flex gap-2 overflow-hidden">
+<div class="w-24 h-10 bg-surface-container-high rounded-full animate-pulse shrink-0"></div>
+<div class="w-24 h-10 bg-surface-container-high rounded-full animate-pulse shrink-0"></div>
+<div class="w-24 h-10 bg-surface-container-high rounded-full animate-pulse shrink-0"></div>
+<div class="w-24 h-10 bg-surface-container-high rounded-full animate-pulse shrink-0"></div>
+</div>
+<!-- Skeleton Orders -->
+<div class="flex flex-col gap-3">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="flex flex-col gap-1.5 flex-1">
+<div class="w-3/4 h-5 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-1/2 h-3.5 bg-surface-container rounded animate-pulse"></div>
+</div>
+</div>
+<div class="h-10 bg-surface-container rounded-lg animate-pulse"></div>
+<div class="grid grid-cols-2 gap-2">
+<div class="h-12 bg-surface-container rounded-xl animate-pulse"></div>
+<div class="h-12 bg-surface-container rounded-xl animate-pulse"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container-high animate-pulse"></div>
+<div class="flex flex-col gap-1.5 flex-1">
+<div class="w-2/3 h-5 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-1/3 h-3.5 bg-surface-container rounded animate-pulse"></div>
+</div>
+</div>
+<div class="h-10 bg-surface-container rounded-lg animate-pulse"></div>
+<div class="grid grid-cols-2 gap-2">
+<div class="h-12 bg-surface-container rounded-xl animate-pulse"></div>
+<div class="h-12 bg-surface-container rounded-xl animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. EMPTY STATE -->
+<div class="hidden flex flex-col items-center justify-center p-space-xl text-center my-auto min-h-[500px]" id="state-empty">
+<div class="w-24 h-24 rounded-full bg-surface-container-high flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-[48px]">soup_kitchen</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Aucune commande pour ce créneau</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px] mb-6">
+      Toutes les commandes du créneau sélectionné ont été traitées ou aucun étudiant n'est inscrit.
+    </p>
+<button class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-2 active:scale-95 transition-all shadow-sm" onclick="switchState('nominal')" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+      Voir les autres créneaux
+    </button>
+</div>
+<!-- 4. ERROR STATE -->
+<div class="hidden flex flex-col items-center justify-center p-space-xl text-center my-auto min-h-[500px]" id="state-error">
+<div class="w-24 h-24 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[44px]">sync_problem</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Erreur de synchronisation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px] mb-6">
+      Impossible de mettre à jour le flux des commandes de la cuisine. Vérifiez votre connexion internet de service.
+    </p>
+<button class="h-12 px-8 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-2 active:scale-95 transition-all shadow-sm" onclick="switchState('nominal')" type="button">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+      Réessayer
+    </button>
+</div>
+</div>
+<script>
+  // State switcher script
+  function switchState(stateName) {
+    const states = ['nominal', 'loading', 'empty', 'error'];
+    states.forEach(s => {
+      const el = document.getElementById('state-' + s);
+      const btn = document.getElementById('btn-' + s);
+      if (s === stateName) {
+        el.classList.remove('hidden');
+        btn.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+      } else {
+        el.classList.add('hidden');
+        btn.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+        btn.classList.add('text-on-surface-variant');
+      }
+    });
+  }
+
+  // Interactive Live Search filter
+  function handleSearch(query) {
+    const clearBtn = document.getElementById('clear-search-btn');
+    const cards = document.querySelectorAll('.order-card');
+    const cleanQuery = query.toLowerCase().trim();
+
+    if (cleanQuery.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+
+    cards.forEach(card => {
+      const name = card.getAttribute('data-name') || '';
+      const id = card.getAttribute('data-id') || '';
+      const cl = card.getAttribute('data-class') || '';
+      const matches = name.includes(cleanQuery) || id.includes(cleanQuery) || cl.includes(cleanQuery);
+      if (matches) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function clearSearch() {
+    const input = document.getElementById('order-search');
+    input.value = '';
+    handleSearch('');
+    input.focus();
+  }
+
+  // Fast Order Status micro-interactions
+  function updateOrderStatus(buttonEl, status) {
+    const card = buttonEl.closest('.order-card');
+    const badge = card.querySelector('.status-badge');
+    
+    if (status === 'prep') {
+      badge.className = 'status-badge px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0';
+      badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">soup_kitchen</span> En préparation';
+    } else if (status === 'ready') {
+      badge.className = 'status-badge px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0';
+      badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span> Prête';
+    } else if (status === 'retrieved') {
+      badge.className = 'status-badge px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1 shrink-0';
+      badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">done_all</span> Récupérée';
+      card.classList.add('opacity-70');
+    }
+  }
+
+  // Bulk action interaction
+  function markAllReady() {
+    const badges = document.querySelectorAll('.order-card .status-badge');
+    badges.forEach(badge => {
+      const card = badge.closest('.order-card');
+      if (!badge.textContent.includes('Récupérée')) {
+        badge.className = 'status-badge px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0';
+        badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span> Prête';
+      }
+    });
+    const bulkBtn = document.getElementById('bulk-btn');
+    bulkBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Toutes les portions marquées prêtes !</span>';
+    bulkBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+    bulkBtn.classList.add('bg-primary-fixed', 'text-on-primary-fixed', 'font-bold');
+  }
+
+  // Highlight bottom navigation active tab for "Commandes"
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('data-path') === 'commandes') {
+        link.classList.add('text-primary', 'font-bold');
+        link.classList.remove('text-on-surface-variant');
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.style.fontVariationSettings = "'FILL' 1";
+        }
+      } else {
+        link.classList.remove('text-primary', 'font-bold');
+        link.classList.add('text-on-surface-variant');
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+        }
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(24,28,26,0.06)]" data-active-classes="text-primary font-label-lg font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] px-space-xs py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="scanner" href="#"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span><span class="font-label-sm text-label-sm">Scanner</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] px-space-xs py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="commandes" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm">Commandes</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] px-space-xs py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="abonnements" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-sm text-label-sm">Abonnements</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[44px] px-space-xs py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profil</span></a></div></nav></body></html>

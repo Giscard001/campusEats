@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#f1f4f1", "inverse-surface": "#2d312f", "on-error-container": "#93000a", "on-surface-variant": "#3f4940", "on-tertiary": "#ffffff", "on-secondary-fixed": "#2a1700", "primary-fixed-dim": "#77db94", "on-tertiary-fixed": "#00210f", "on-background": "#181c1a", "surface-container": "#ecefeb", "secondary-fixed-dim": "#ffb95f", "tertiary-fixed-dim": "#8cd7a3", "on-primary": "#ffffff", "on-primary-container": "#f6fff4", "on-error": "#ffffff", "surface-bright": "#f7faf6", "on-secondary-fixed-variant": "#653e00", "tertiary": "#1c693f", "secondary-fixed": "#ffddb8", "surface": "#f7faf6", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#00210d", "on-tertiary-fixed-variant": "#00522d", "surface-container-high": "#e6e9e5", "background": "#f7faf6", "secondary-container": "#fea619", "primary-fixed": "#93f8ae", "primary": "#006a36", "error-container": "#ffdad6", "primary-container": "#188648", "surface-dim": "#d8dbd7", "inverse-on-surface": "#eef1ee", "tertiary-container": "#398256", "on-surface": "#181c1a", "outline-variant": "#becabd", "error": "#ba1a1a", "surface-tint": "#006d37", "tertiary-fixed": "#a7f3be", "secondary": "#855300", "on-secondary": "#ffffff", "outline": "#6f7a6f", "on-tertiary-container": "#f6fff4", "inverse-primary": "#77db94", "on-primary-fixed-variant": "#005228", "surface-variant": "#e0e3e0", "on-secondary-container": "#684000", "surface-container-highest": "#e0e3e0" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "gutter": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "space-xl": "2rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-md": ["Epilogue"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Epilogue"], "label-lg": ["Inter"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Epilogue"], "body-lg": ["Inter"], "display-lg": ["Epilogue"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between"><button aria-label="Retour" class="w-11 h-11 -ml-1 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span></button><h1 class="font-headline-md text-headline-md text-on-surface text-center flex-1 truncate px-space-xs">Créneaux De Retrait</h1><div class="flex items-center justify-end w-11 h-11"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_8px_rgba(27,31,29,0.08)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col w-full px-margin-mobile pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- En-tête de section avec badge de notification réactif -->
+<div class="flex flex-col gap-space-xs mt-2 mb-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<h2 class="font-headline-md text-headline-md text-on-surface truncate">Comptes en attente</h2>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-error-container text-on-error-container rounded-full shrink-0 shadow-sm animate-pulse">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm font-bold">3 à traiter</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rapprochement des demandes d'accès boursier avec la liste FONER</p>
+</div>
+<!-- Bannière explicative d'aide & contexte avec micro-illustration SVG -->
+<div class="w-full bg-surface-container-low p-space-md rounded-xl shadow-sm mb-space-md relative overflow-hidden">
+<div class="flex gap-space-sm items-start">
+<div class="w-9 h-9 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-md text-label-md text-on-surface block font-semibold mb-0.5">Contrôle de conformité bourses</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Vérifiez la concordance entre les déclarations saisies par l'étudiant lors de son inscription et le registre officiel FONER pour attribuer l'accès gratuit/subventionné à la cantine.
+        </p>
+</div>
+</div>
+</div>
+<!-- Barre de filtres & onglets de tri tactiles -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 mb-space-md no-scrollbar">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span>Toutes</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest text-primary text-[11px] font-bold flex items-center justify-center">3</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 shrink-0 hover:bg-surface-container-high transition-colors" type="button">
+<span>Concordance élevée</span>
+<span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[11px] font-semibold">2</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 shrink-0 hover:bg-surface-container-high transition-colors" type="button">
+<span>À vérifier</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[11px] font-semibold">1</span>
+</button>
+</div>
+<!-- Liste des demandes de rapprochement -->
+<div class="flex flex-col gap-space-md" id="demandes-list">
+<!-- DEMANDE 1 : Concordance 98% (Quasi-parfaite) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all duration-300" id="card-demande-1">
+<!-- En-tête Carte -->
+<div class="flex items-center justify-between mb-space-sm gap-2">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-label-sm font-semibold">Concordance 98%</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm">Aujourd'hui, 09:40</span>
+</div>
+</div>
+<!-- Bloc de rapprochement en 2 volets -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-space-md">
+<!-- Volet Déclaré -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2 pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Déclaré par l'élève</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">Saisie</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                YK
+              </div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">Yacouba KABORE</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">L1 Sciences Eco</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 mb-2">
+<span class="font-label-sm text-[10px] text-on-surface-variant block">Matricule déclaré</span>
+<p class="font-label-md text-label-md text-on-surface font-mono">ETU-2024-BF5102</p>
+</div>
+</div>
+<!-- Pièce jointe -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-2.5 py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">picture_as_pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Attestation_FONER.pdf</span>
+</div>
+<button aria-label="Visualiser l'attestation" class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Volet Registre Officiel FONER -->
+<div class="bg-surface-container rounded-xl p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2 pb-1">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Registre FONER</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-semibold">Base 2024</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">KABORE Yacouba</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Faculté Sc. Éco</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 mb-2 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-[10px] text-on-surface-variant block">Matricule officiel</span>
+<p class="font-label-md text-label-md text-on-surface font-mono">ETU-2024-BF5102</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="bg-primary-container/10 px-2.5 py-1.5 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Statut bourse</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Éligible 100%</span>
+</div>
+</div>
+</div>
+<!-- Actions Tactiles (min-h 48px) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-1">
+<button class="w-full min-h-[48px] px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]" onclick="validerDemande('card-demande-1', 'Yacouba KABORE')" type="button">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>Valider comme boursier</span>
+</button>
+<button class="w-full min-h-[48px] px-4 rounded-xl bg-surface-container-high text-error font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-error-container/40 transition-colors active:scale-[0.98]" onclick="refuserDemande('card-demande-1', 'Yacouba KABORE')" type="button">
+<span class="material-symbols-outlined text-[20px]">person_off</span>
+<span>Refuser (non boursier)</span>
+</button>
+</div>
+</article>
+<!-- DEMANDE 2 : Légère divergence de saisie (82%) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all duration-300" id="card-demande-2">
+<!-- En-tête Carte -->
+<div class="flex items-center justify-between mb-space-sm gap-2">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span class="font-label-sm text-label-sm font-semibold">Vérification requise (82%)</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm">Hier, 16:15</span>
+</div>
+</div>
+<!-- Note d'aide mise en avant -->
+<div class="bg-secondary-container/20 text-on-surface px-3 py-2 rounded-lg flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">info</span>
+<span class="font-body-sm text-body-sm">Possible faute de frappe sur le dernier chiffre du matricule.</span>
+</div>
+<!-- Bloc Comparatif -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-space-md">
+<!-- Déclaré -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2 pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Déclaré par l'élève</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">Saisie</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                AC
+              </div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">Aminata COMPAORE</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">L2 Gestion</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 mb-2">
+<span class="font-label-sm text-[10px] text-on-surface-variant block">Matricule saisi</span>
+<p class="font-label-md text-label-md text-on-surface font-mono">
+                ETU-2024-BF332<span class="text-error font-bold underline">9</span>
+</p>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-2.5 py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">description</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Reçu_Bourse_FONER.jpg</span>
+</div>
+<button aria-label="Visualiser le reçu" class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Registre Officiel -->
+<div class="bg-surface-container rounded-xl p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2 pb-1">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Registre FONER</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] font-semibold">Proche</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">COMPAORÉ Aminata</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">UFR / Sciences Gestion</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 mb-2">
+<span class="font-label-sm text-[10px] text-on-surface-variant block">Matricule trouvé</span>
+<p class="font-label-md text-label-md text-on-surface font-mono">
+                ETU-2024-BF332<span class="bg-secondary-fixed text-on-secondary-fixed px-1 rounded font-bold">8</span>
+</p>
+</div>
+</div>
+<div class="bg-tertiary-fixed/40 px-2.5 py-1.5 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed font-semibold">Statut FONER</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Actif (Bourse repas)</span>
+</div>
+</div>
+</div>
+<!-- Actions Tactiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-1">
+<button class="w-full min-h-[48px] px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]" onclick="validerDemande('card-demande-2', 'Aminata COMPAORE')" type="button">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>Valider comme boursier</span>
+</button>
+<button class="w-full min-h-[48px] px-4 rounded-xl bg-surface-container-high text-error font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-error-container/40 transition-colors active:scale-[0.98]" onclick="refuserDemande('card-demande-2', 'Aminata COMPAORE')" type="button">
+<span class="material-symbols-outlined text-[20px]">person_off</span>
+<span>Refuser (non boursier)</span>
+</button>
+</div>
+</article>
+<!-- DEMANDE 3 : Aucune correspondance directe (35%) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all duration-300" id="card-demande-3">
+<!-- En-tête Carte -->
+<div class="flex items-center justify-between mb-space-sm gap-2">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span class="font-label-sm text-label-sm font-semibold">Aucune correspondance (35%)</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm">Hier, 11:30</span>
+</div>
+</div>
+<!-- Bloc Comparatif -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-space-md">
+<!-- Déclaré -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2 pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Déclaré par l'élève</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">Saisie</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-surface-dim text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                MO
+              </div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">Marc OUEDRAOGO</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">L3 Droit Public</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 mb-2">
+<span class="font-label-sm text-[10px] text-on-surface-variant block">Matricule déclaré</span>
+<p class="font-label-md text-label-md text-on-surface font-mono">ETU-2023-BF1104</p>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-2.5 py-1.5 rounded-lg">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px]">help_center</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Carte_etudiant.jpg</span>
+</div>
+<button aria-label="Visualiser la pièce" class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Registre FONER : Pas de résultat -->
+<div class="bg-surface-container rounded-xl p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2 pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Registre FONER</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-semibold">Introuvable</span>
+</div>
+<div class="py-4 text-center flex flex-col items-center justify-center">
+<div class="w-10 h-10 rounded-full bg-error-container/40 flex items-center justify-center text-error mb-2">
+<span class="material-symbols-outlined text-[22px]">person_search</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Aucun boursier actif trouvé pour ce matricule dans la base FONER 2024-2025.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-high px-2.5 py-1.5 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Statut : Non répertorié</span>
+</div>
+</div>
+</div>
+<!-- Actions Tactiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-1">
+<button class="w-full min-h-[48px] px-4 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-variant transition-colors active:scale-[0.98]" onclick="validerDemande('card-demande-3', 'Marc OUEDRAOGO')" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span>Valider manuellement</span>
+</button>
+<button class="w-full min-h-[48px] px-4 rounded-xl bg-error-container text-on-error-container font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-error/20 transition-colors active:scale-[0.98]" onclick="refuserDemande('card-demande-3', 'Marc OUEDRAOGO')" type="button">
+<span class="material-symbols-outlined text-[20px]">person_off</span>
+<span>Refuser (non boursier)</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Résumé & Pied d'actions globales -->
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+<span class="font-label-md text-label-md text-on-surface">3 demandes restantes</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">18 traitées cette semaine</span>
+</div>
+<!-- Séparateur doux -->
+<div class="w-full h-px bg-surface-container-high"></div>
+<div class="flex flex-col sm:flex-row items-center gap-2">
+<button class="w-full sm:flex-1 min-h-[48px] px-4 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95" onclick="validerToutEligible()" type="button">
+<span class="material-symbols-outlined text-[20px]">done_all</span>
+<span>Valider concordances &gt; 95%</span>
+</button>
+<a class="w-full sm:w-auto min-h-[48px] px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors" href="tel:+22625000000">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+<span>Support Scolarité</span>
+</a>
+</div>
+</div>
+<!-- Toast de confirmation dynamique -->
+<div class="fixed bottom-6 left-4 right-4 max-w-sm mx-auto bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center justify-between gap-3 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300 z-50" id="toast-notification">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm truncate" id="toast-text">Demande traitée avec succès</span>
+</div>
+<button class="text-inverse-on-surface/80 hover:text-inverse-on-surface p-1" onclick="cacherToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('toast-notification');
+    const toastText = document.getElementById('toast-text');
+    const toastIcon = document.getElementById('toast-icon');
+
+    if (!toast || !toastText) return;
+
+    toastText.textContent = message;
+    if (isError) {
+      toastIcon.textContent = 'cancel';
+      toastIcon.className = 'material-symbols-outlined text-error text-[20px]';
+    } else {
+      toastIcon.textContent = 'check_circle';
+      toastIcon.className = 'material-symbols-outlined text-primary-fixed text-[20px]';
+    }
+
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      cacherToast();
+    }, 3200);
+  }
+
+  function cacherToast() {
+    const toast = document.getElementById('toast-notification');
+    if (!toast) return;
+    toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+  }
+
+  function validerDemande(cardId, etuNom) {
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.style.opacity = '0.4';
+      card.style.pointerEvents = 'none';
+      card.style.transform = 'scale(0.98)';
+      setTimeout(() => {
+        card.remove();
+        showToast(`Statut boursier validé pour ${etuNom}`);
+        verifierEtatVide();
+      }, 350);
+    }
+  }
+
+  function refuserDemande(cardId, etuNom) {
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.style.opacity = '0.4';
+      card.style.pointerEvents = 'none';
+      card.style.transform = 'scale(0.98)';
+      setTimeout(() => {
+        card.remove();
+        showToast(`Demande rejetée pour ${etuNom}`, true);
+        verifierEtatVide();
+      }, 350);
+    }
+  }
+
+  function validerToutEligible() {
+    validerDemande('card-demande-1', 'Yacouba KABORE');
+  }
+
+  function verifierEtatVide() {
+    const list = document.getElementById('demandes-list');
+    if (list && list.children.length === 0) {
+      list.innerHTML = `
+        <div class="bg-surface-container-lowest rounded-xl p-8 text-center flex flex-col items-center justify-center shadow-sm">
+          <div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-3">
+            <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Toutes les demandes sont traitées !</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+            Le registre des boursiers FONER est synchronisé et à jour pour le service de restauration.
+          </p>
+        </div>
+      `;
+    }
+  }
+</script></main></body></html>

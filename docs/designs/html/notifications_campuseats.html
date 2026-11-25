@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#3f4940", "on-secondary": "#ffffff", "secondary-fixed-dim": "#ffb95f", "surface-container-high": "#e6e9e5", "surface-variant": "#e0e3e0", "surface-container": "#ecefeb", "tertiary": "#1c693f", "surface-tint": "#006d37", "error-container": "#ffdad6", "inverse-primary": "#77db94", "on-primary-container": "#f6fff4", "on-primary": "#ffffff", "inverse-surface": "#2d312f", "on-secondary-fixed": "#2a1700", "primary-container": "#188648", "on-error": "#ffffff", "on-secondary-container": "#684000", "on-primary-fixed": "#00210d", "surface-container-low": "#f1f4f1", "tertiary-fixed": "#a7f3be", "surface-container-lowest": "#ffffff", "tertiary-container": "#398256", "inverse-on-surface": "#eef1ee", "surface-container-highest": "#e0e3e0", "secondary-fixed": "#ffddb8", "secondary": "#855300", "primary-fixed-dim": "#77db94", "background": "#f7faf6", "secondary-container": "#fea619", "on-primary-fixed-variant": "#005228", "surface-bright": "#f7faf6", "error": "#ba1a1a", "primary": "#006a36", "on-surface": "#181c1a", "on-error-container": "#93000a", "on-tertiary-container": "#f6fff4", "on-background": "#181c1a", "primary-fixed": "#93f8ae", "on-tertiary-fixed": "#00210f", "tertiary-fixed-dim": "#8cd7a3", "outline": "#6f7a6f", "on-tertiary": "#ffffff", "surface": "#f7faf6", "outline-variant": "#becabd", "on-tertiary-fixed-variant": "#00522d", "on-secondary-fixed-variant": "#653e00", "surface-dim": "#d8dbd7" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "gutter": "1rem", "space-xs": "0.25rem", "margin": "1rem" }, "fontFamily": { "display-lg": ["Epilogue"], "label-md": ["Inter"], "headline-lg": ["Epilogue"], "label-sm": ["Inter"], "headline-sm": ["Epilogue"], "label-lg": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Epilogue"] }, "fontSize": { "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}body{min-height:max(884px,100dvh);}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><button aria-label="Retour" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[22px]">restaurant</span><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CampusEats</span></div></div><h1 class="font-headline-sm text-headline-sm text-on-surface text-center truncate flex-1 px-space-xs">Notifications</h1><div class="flex items-center justify-end"><button class="text-primary hover:text-primary-container font-label-md text-label-md px-2 py-1.5 rounded-lg hover:bg-surface-container transition-colors whitespace-nowrap" id="header-action-mark-read" type="button">Tout marquer comme lu</button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Interactive View Switcher (Dev / Demo Simulation Bar) -->
+<div class="px-margin-mobile pt-3 pb-2">
+<div class="bg-surface-container-high p-1 rounded-full flex items-center justify-between shadow-sm">
+<button class="flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm" id="btn-view-nominal" onclick="switchNotificationView('nominal')" type="button">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span>Actives (<span id="unread-counter">2</span>)</span>
+</button>
+<button class="flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 text-on-surface-variant hover:text-on-surface" id="btn-view-empty" onclick="switchNotificationView('empty')" type="button">
+<span class="material-symbols-outlined text-[16px]">notifications_off</span>
+<span>État vide</span>
+</button>
+</div>
+</div>
+<!-- NOMINAL STATE CONTAINER -->
+<div class="flex flex-col w-full transition-opacity duration-200" id="container-nominal">
+<!-- Section: Aujourd'hui -->
+<div class="px-margin-mobile pt-3 pb-1 flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant tracking-wider uppercase">Aujourd'hui</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-tertiary-fixed/30 px-2 py-0.5 rounded-full" id="section-today-badge">2 nouvelles</span>
+</div>
+<div class="px-margin-mobile flex flex-col gap-3 mt-1.5">
+<!-- Notification 1: Ready for pickup (Unread / Urgent Delight) -->
+<article class="notification-item unread bg-surface-container-lowest rounded-xl p-4 shadow-sm active:scale-[0.99] transition-all relative overflow-hidden" data-id="notif-1">
+<!-- Visual Accent Strip -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start gap-3 pl-1">
+<!-- Dish Icon Badge -->
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 text-primary flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">takeout_dining</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Repas prêt au retrait</h2>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant">13:05</span>
+<!-- Green Unread Dot -->
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface-container-lowest animate-pulse"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+              Votre repas est prêt, présentez votre QR au créneau <span class="font-semibold text-on-surface">13:15</span> au comptoir Express.
+            </p>
+<!-- Quick Action: QR Code Button (min 48px touch) -->
+<div class="mt-3 pt-2 flex items-center justify-between">
+<button class="min-h-[48px] px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center gap-2 hover:bg-primary-container active:scale-95 transition-all shadow-xs" onclick="simulateQrClick(this)" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">qr_code_scanner</span>
+<span>Voir mon QR code</span>
+</button>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 bg-surface-container-low px-2.5 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Créneau 13:15
+              </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Notification 2: Subscription Warning (Unread / Warning) -->
+<article class="notification-item unread bg-surface-container-lowest rounded-xl p-4 shadow-sm active:scale-[0.99] transition-all relative overflow-hidden" data-id="notif-2">
+<!-- Visual Accent Strip -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex items-start gap-3 pl-1">
+<!-- Hourglass / Calendar Icon Badge -->
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">hourglass_top</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Abonnement bientôt à expiration</h2>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant">09:30</span>
+<!-- Amber Unread Dot -->
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-surface-container-lowest"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+              Votre formule déjeuner mensuelle expire dans <span class="font-semibold text-secondary">5 jours</span> (31 Octobre). Ne manquez aucun repas de campus !
+            </p>
+<!-- Quick Action: Renew (min 48px touch) -->
+<div class="mt-3 pt-1 flex items-center gap-3">
+<button class="min-h-[48px] px-4 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center gap-1.5 hover:bg-surface-variant active:scale-95 transition-all" onclick="simulateRenew(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>Renouveler</span>
+</button>
+<button class="min-h-[48px] px-3 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="dismissAlert(this)" type="button">
+                Rappeler demain
+              </button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Section: Cette semaine / Hier -->
+<div class="px-margin-mobile pt-6 pb-1 flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant tracking-wider uppercase">Cette semaine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Historique récent</span>
+</div>
+<div class="px-margin-mobile flex flex-col gap-3 mt-1.5">
+<!-- Notification 3: Canceled & Refunded (Read / Treated) -->
+<article class="notification-item bg-surface-container-lowest/80 rounded-xl p-4 shadow-sm opacity-90 transition-all" data-id="notif-3">
+<div class="flex items-start gap-3">
+<!-- Cancel / Refund Soft Icon Badge -->
+<div class="w-12 h-12 rounded-xl bg-error-container/60 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">cancel</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Commande annulée</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant shrink-0">Hier à 10:02</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+              Commande N° #8492 annulée. <span class="text-tertiary font-semibold">Remboursement de 750 FCFA</span> crédité sur votre solde cantine CampusEats.
+            </p>
+<div class="mt-2.5 flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span>
+                Traité · Solde actualisé
+              </span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">+ 750 FCFA</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Notification 4: Tomorrow's Menu Available (Read) -->
+<article class="notification-item bg-surface-container-lowest/80 rounded-xl p-4 shadow-sm opacity-90 transition-all" data-id="notif-4">
+<div class="flex items-start gap-3">
+<!-- Chef Hat / Menu Icon Badge -->
+<div class="w-12 h-12 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Menu de demain en ligne</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant shrink-0">Hier à 18:00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+              Le menu du Vendredi 25 Octobre est disponible (Riz gras au poisson &amp; Alloco). Commandez avant 10h00 !
+            </p>
+<div class="mt-2.5">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline" href="#">
+<span>Découvrir le menu du jour</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Campus Dining Info Tip -->
+<div class="px-margin-mobile mt-5">
+<div class="bg-surface-container-low rounded-xl p-3.5 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Pour éviter l'attente en caisse aux heures de pointe, activez les notifications push pour être prévenu dès la sortie du four.
+        </p>
+</div>
+</div>
+</div>
+<!-- EMPTY STATE CONTAINER (Hidden by default, toggleable via dev switch or clear action) -->
+<div class="hidden flex flex-col items-center justify-center px-margin-mobile py-10 text-center transition-opacity duration-200" id="container-empty">
+<!-- Friendly Illustrated Circular Aura -->
+<div class="relative w-36 h-36 rounded-full bg-surface-container-low flex items-center justify-center mb-6 shadow-inner">
+<div class="absolute inset-2 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-primary text-[56px] opacity-80" style="font-variation-settings: 'FILL' 0;">notifications_paused</span>
+</div>
+<!-- Decorative Micro Spangles -->
+<span class="material-symbols-outlined text-secondary text-[20px] absolute -top-1 right-5 animate-bounce">arrow_back_ios_new</span>
+<span class="material-symbols-outlined text-primary text-[16px] absolute bottom-3 left-4">check</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Aucune notification</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xs mb-8 leading-relaxed">
+      Vous êtes parfaitement à jour ! Vos alertes de retrait de repas et rappels d'abonnement apparaîtront ici.
+    </p>
+<!-- Return to Menu CTA (Minimum 48px touch target) -->
+<div class="w-full max-w-xs flex flex-col gap-2.5">
+<button class="w-full min-h-[48px] px-6 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container active:scale-98 transition-all shadow-sm" onclick="simulateBackToMenu()" type="button">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+<span>Commander un repas</span>
+</button>
+<button class="w-full min-h-[48px] px-6 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-variant active:scale-98 transition-all" onclick="switchNotificationView('nominal')" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Recharger les notifications fictives</span>
+</button>
+</div>
+</div>
+<!-- Toast Feedback Overlay for Campus Interaction Delight -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full font-label-md text-label-md shadow-lg flex items-center gap-2 pointer-events-none opacity-0 transition-opacity duration-300 z-50" id="toast-delight">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span id="toast-text">Toutes les notifications sont marquées comme lues</span>
+</div>
+</div>
+<script>
+  // UI Switcher between Nominal List and Empty State
+  function switchNotificationView(view) {
+    const nominal = document.getElementById('container-nominal');
+    const empty = document.getElementById('container-empty');
+    const btnNominal = document.getElementById('btn-view-nominal');
+    const btnEmpty = document.getElementById('btn-view-empty');
+
+    if (view === 'empty') {
+      nominal.classList.add('hidden');
+      empty.classList.remove('hidden');
+      
+      btnEmpty.className = "flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm";
+      btnNominal.className = "flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+    } else {
+      empty.classList.add('hidden');
+      nominal.classList.remove('hidden');
+
+      btnNominal.className = "flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm";
+      btnEmpty.className = "flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+    }
+  }
+
+  // Handle Mark All Read Action from Shell Header or Local interaction
+  function markAllNotificationsAsRead() {
+    const dots = document.querySelectorAll('.unread-dot');
+    dots.forEach(dot => {
+      dot.classList.add('scale-0');
+      setTimeout(() => dot.remove(), 200);
+    });
+
+    const items = document.querySelectorAll('.notification-item.unread');
+    items.forEach(item => {
+      item.classList.remove('unread');
+      item.classList.add('opacity-90');
+    });
+
+    const counter = document.getElementById('unread-counter');
+    if (counter) counter.innerText = '0';
+
+    const badge = document.getElementById('section-today-badge');
+    if (badge) {
+      badge.innerText = 'À jour';
+      badge.className = 'font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full';
+    }
+
+    showToast("Toutes les notifications sont marquées comme lues");
+  }
+
+  // Toast notification delight
+  function showToast(message) {
+    const toast = document.getElementById('toast-delight');
+    const toastText = document.getElementById('toast-text');
+    if (!toast) return;
+    toastText.innerText = message;
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+    }, 2400);
+  }
+
+  function simulateQrClick(btn) {
+    showToast("Ouverture de votre QR Code de retrait...");
+    btn.classList.add('scale-95');
+    setTimeout(() => btn.classList.remove('scale-95'), 150);
+  }
+
+  function simulateRenew(btn) {
+    showToast("Redirection vers les formules d'abonnement...");
+  }
+
+  function dismissAlert(btn) {
+    const card = btn.closest('article');
+    if (card) {
+      card.style.opacity = '0.4';
+      card.style.transform = 'translateX(10px)';
+      setTimeout(() => {
+        card.style.display = 'none';
+        showToast("Rappel programmé pour demain");
+      }, 250);
+    }
+  }
+
+  function simulateBackToMenu() {
+    showToast("Retour au menu des cantines du campus...");
+  }
+
+  // Bind to header action button if rendered in App Shell
+  document.addEventListener('DOMContentLoaded', () => {
+    const headerBtn = document.getElementById('header-action-mark-read');
+    if (headerBtn) {
+      headerBtn.addEventListener('click', markAllNotificationsAsRead);
+    }
+  });
+
+  // Fallback direct execution in case DOMContentLoaded already fired
+  const headerBtnFallback = document.getElementById('header-action-mark-read');
+  if (headerBtnFallback) {
+    headerBtnFallback.onclick = markAllNotificationsAsRead;
+  }
+</script></main></body></html>

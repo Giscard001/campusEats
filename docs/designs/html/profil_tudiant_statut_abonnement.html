@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#becabd", "surface-bright": "#f7faf6", "secondary": "#855300", "background": "#f7faf6", "error": "#ba1a1a", "on-surface": "#181c1a", "primary-container": "#188648", "outline": "#6f7a6f", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-fixed": "#00210f", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#00522d", "secondary-fixed-dim": "#ffb95f", "primary-fixed-dim": "#77db94", "surface-variant": "#e0e3e0", "on-surface-variant": "#3f4940", "surface-container-highest": "#e0e3e0", "on-primary-fixed": "#00210d", "surface-dim": "#d8dbd7", "surface": "#f7faf6", "on-background": "#181c1a", "on-primary-fixed-variant": "#005228", "on-secondary-fixed-variant": "#653e00", "on-secondary-container": "#684000", "surface-container": "#ecefeb", "tertiary-fixed": "#a7f3be", "surface-container-low": "#f1f4f1", "tertiary-fixed-dim": "#8cd7a3", "on-error-container": "#93000a", "secondary-container": "#fea619", "primary": "#006a36", "inverse-surface": "#2d312f", "on-tertiary": "#ffffff", "inverse-on-surface": "#eef1ee", "surface-container-high": "#e6e9e5", "tertiary": "#1c693f", "error-container": "#ffdad6", "tertiary-container": "#398256", "on-secondary-fixed": "#2a1700", "inverse-primary": "#77db94", "primary-fixed": "#93f8ae", "on-primary-container": "#f6fff4", "surface-tint": "#006d37", "on-tertiary-container": "#f6fff4", "on-primary": "#ffffff", "secondary-fixed": "#ffddb8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "1rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "gutter": "1rem" }, fontFamily: { "headline-sm": ["Epilogue"], "label-lg": ["Inter"], "headline-md": ["Epilogue"], "label-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "display-lg": ["Epilogue"], "headline-lg": ["Epilogue"], "body-sm": ["Inter"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,31,29,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="CampusEats Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6zMLq7z4LNn00Jaak-8_R7TH2j4wx49R59GKeMtDcI1l442Pd-U-MpyiAnelOW3UrBaHrvThozDv8r5v2aSCmtzvok5KBDPetzV-_3gws4n6jI77MmmRnF4bf9gKRSLMU3PvYnjfPT7qleE5zGTGULrIwD1E_c4kU26Sa17k1qCPh4JYiZOx3Io3CxhrrimCWK-_vUfbmTAoLgk3ipAsaXSCfi722DGThWUsqIRc"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1"><span class="font-headline-sm text-headline-sm text-primary leading-tight truncate">CampusEats</span><span class="hidden">Profil</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate bg-surface-container-high px-1.5 py-0.5 rounded-full inline-block max-w-[170px]">Lycée / Univ. Ouaga</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Mon Profil" class="w-11 h-11 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full focus:outline-none"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzRRi8mbylItCIU38XlI_426kwon49tU5iViQ841p3KJ8ARve7upqf6mn6vnI-5RMfUtcw4ONvsuJSSwnq5xhNp2fToRDSWHHnK_nSzpJQZmQQthr0sXFcKW7cS7Aj4FebMa1SnrctDhrXVkYEeHPPYa2nSdHJgwWMFniQPrDrx31k4xQMPRGNePWshjrGeEpq4OC-Ba2jDaZg07PCoPGKK3cnZK3eyyfUXeAbhYE"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-8">
+<!-- Demo Switcher (Modes de prévisualisation) -->
+<div class="mb-4 bg-surface-container-low p-2 rounded-xl">
+<div class="flex items-center justify-between mb-1.5 px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">tune</span>
+        Aperçu état étudiant
+      </span>
+<span class="font-body-sm text-body-sm text-outline">Démo interactive</span>
+</div>
+<div class="grid grid-cols-3 gap-1 p-0.5 bg-surface-container rounded-lg">
+<button class="py-2 px-1 text-center rounded-md font-label-sm text-label-sm transition-all bg-surface-container-lowest text-primary shadow-sm flex flex-col items-center justify-center" id="btn-state-nominal" onclick="switchState('nominal')">
+<span>Actif</span>
+<span class="text-[9px] opacity-75 font-normal">Nominal</span>
+</button>
+<button class="py-2 px-1 text-center rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface flex flex-col items-center justify-center" id="btn-state-alert" onclick="switchState('alert')">
+<span>Expiration</span>
+<span class="text-[9px] opacity-75 font-normal">5 jours</span>
+</button>
+<button class="py-2 px-1 text-center rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface flex flex-col items-center justify-center" id="btn-state-foner" onclick="switchState('foner')">
+<span>Boursier</span>
+<span class="text-[9px] opacity-75 font-normal">FONER</span>
+</button>
+</div>
+</div>
+<!-- Profil En-Tête Utilisateur -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm mb-4 relative overflow-hidden">
+<div class="flex items-start gap-4">
+<!-- Avatar Circulaire Émeraude avec Badge Vérifié -->
+<div class="relative flex-shrink-0">
+<div class="w-16 h-16 rounded-full bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-on-primary font-headline-lg text-headline-lg tracking-wider shadow-md shadow-primary/20">
+          AO
+        </div>
+<div class="absolute -bottom-1 -right-1 bg-surface-container-lowest p-0.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px] block" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<!-- Détails Identité -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Awa Ouédraogo</h2>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed inline-flex items-center gap-1 flex-shrink-0" id="header-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            En règle
+          </span>
+</div>
+<!-- Matricule avec Bouton Copie Rapide -->
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline">badge</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold tracking-wide" id="matricule-val">ETU-2024-BF9412</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-container-high text-outline hover:text-primary transition-colors" onclick="copyMatricule()" title="Copier le matricule">
+<span class="material-symbols-outlined text-[15px]" id="copy-icon">content_copy</span>
+</button>
+</div>
+<!-- Filière et Campus -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          L2 Informatique • Campus Joseph Ki-Zerbo <span class="text-outline text-[11px]">(Ouagadougou)</span>
+</p>
+</div>
+</div>
+<!-- Notification discrète Toast Matricule Copié -->
+<div class="hidden absolute top-3 right-3 bg-inverse-surface text-inverse-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm items-center gap-1 shadow-md transition-all" id="toast-copy">
+<span class="material-symbols-outlined text-[14px] text-inverse-primary">check</span>
+      Matricule copié !
+    </div>
+</div>
+<!-- CARTE STATUT DYNAMIQUE -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm mb-4 transition-all duration-300" id="status-card-container">
+<!-- En-tête Statut -->
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary" id="status-icon-bg">
+<span class="material-symbols-outlined text-[18px]" id="status-icon">verified_user</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Formule en cours</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="status-title">Abonnement annuel actif</h3>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-primary font-bold" id="status-pill">
+        Actif
+      </span>
+</div>
+<!-- Conteneur Alerte Spécifique (pour Variante Expiration) -->
+<div class="hidden mb-3.5 p-3 rounded-xl bg-error-container text-on-error-container flex items-center gap-2.5" id="alert-banner">
+<span class="material-symbols-outlined text-[20px] text-error">notification_important</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm font-bold">Attention : échéance imminente</p>
+<p class="font-body-sm text-body-sm leading-tight text-on-error-container/90">Votre forfait expire dans 5 jours. Renouvelez pour continuer à déjeuner sans interruption.</p>
+</div>
+</div>
+<!-- Barre de Progression -->
+<div class="space-y-1.5 my-3">
+<div class="flex justify-between items-baseline font-body-sm text-body-sm">
+<span class="text-on-surface-variant" id="status-validity">Valable jusqu'au 30/01/2027</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="status-days">420 jours restants</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-primary transition-all duration-500" id="status-progress-bar" style="width: 85%;"></div>
+</div>
+</div>
+<!-- Info cantine & Action renouvellement -->
+<div class="pt-2 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">restaurant</span>
+<span id="status-venue">Valable pour tous les déjeuners à la Cantine Centrale</span>
+</div>
+<!-- Bouton Renouveler (affiché en cas d'expiration) -->
+<button class="hidden w-full h-12 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm hover:opacity-95 active:scale-[0.99] transition-all" id="btn-renew">
+<span class="material-symbols-outlined text-[20px]">autorenew</span>
+        Renouveler mon abonnement
+      </button>
+</div>
+</div>
+<!-- CARTE MON QR D'IDENTITÉ -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm mb-4">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mon QR d'identité</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Permanent</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<!-- Vignette QR Code dans Encart Blanc Stylisé -->
+<div class="relative bg-surface-container-lowest p-3 rounded-xl shadow-[0_2px_12px_rgba(24,134,72,0.12)] my-2">
+<!-- SVG QR Code Haute Définition -->
+<svg class="w-36 h-36" fill="none" viewbox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+<!-- Background -->
+<rect fill="#FFFFFF" height="120" rx="8" width="120"></rect>
+<!-- Outer Corner TL -->
+<rect fill="#006A36" height="30" rx="4" width="30" x="10" y="10"></rect>
+<rect fill="#FFFFFF" height="20" rx="2" width="20" x="15" y="15"></rect>
+<rect fill="#006A36" height="12" rx="1.5" width="12" x="19" y="19"></rect>
+<!-- Outer Corner TR -->
+<rect fill="#006A36" height="30" rx="4" width="30" x="80" y="10"></rect>
+<rect fill="#FFFFFF" height="20" rx="2" width="20" x="85" y="15"></rect>
+<rect fill="#006A36" height="12" rx="1.5" width="12" x="89" y="19"></rect>
+<!-- Outer Corner BL -->
+<rect fill="#006A36" height="30" rx="4" width="30" x="10" y="80"></rect>
+<rect fill="#FFFFFF" height="20" rx="2" width="20" x="15" y="85"></rect>
+<rect fill="#006A36" height="12" rx="1.5" width="12" x="19" y="89"></rect>
+<!-- Data Grid Pattern Simulated (Campus Matrix) -->
+<rect fill="#181C1A" height="6" width="6" x="46" y="12"></rect>
+<rect fill="#181C1A" height="6" width="6" x="56" y="12"></rect>
+<rect fill="#181C1A" height="6" width="6" x="66" y="12"></rect>
+<rect fill="#181C1A" height="6" width="6" x="46" y="24"></rect>
+<rect fill="#181C1A" height="6" width="6" x="66" y="24"></rect>
+<rect fill="#181C1A" height="6" width="6" x="56" y="34"></rect>
+<rect fill="#181C1A" height="6" width="6" x="12" y="48"></rect>
+<rect fill="#181C1A" height="6" width="6" x="24" y="48"></rect>
+<rect fill="#181C1A" height="6" width="6" x="36" y="48"></rect>
+<rect fill="#006A36" height="8" rx="2" width="8" x="48" y="48"></rect>
+<rect fill="#006A36" height="8" rx="2" width="8" x="64" y="48"></rect>
+<rect fill="#181C1A" height="6" width="6" x="80" y="48"></rect>
+<rect fill="#181C1A" height="6" width="6" x="102" y="48"></rect>
+<rect fill="#181C1A" height="6" width="6" x="12" y="60"></rect>
+<rect fill="#181C1A" height="6" width="6" x="30" y="60"></rect>
+<rect fill="#181C1A" height="6" width="6" x="48" y="60"></rect>
+<rect fill="#181C1A" height="6" width="6" x="66" y="60"></rect>
+<rect fill="#181C1A" height="6" width="6" x="84" y="60"></rect>
+<rect fill="#181C1A" height="6" width="6" x="102" y="60"></rect>
+<rect fill="#181C1A" height="6" width="6" x="48" y="76"></rect>
+<rect fill="#181C1A" height="6" width="6" x="60" y="76"></rect>
+<rect fill="#181C1A" height="6" width="6" x="48" y="88"></rect>
+<rect fill="#181C1A" height="6" width="6" x="66" y="88"></rect>
+<rect fill="#181C1A" height="6" width="6" x="54" y="100"></rect>
+<rect fill="#181C1A" height="6" width="6" x="82" y="76"></rect>
+<rect fill="#181C1A" height="6" width="6" x="94" y="76"></rect>
+<rect fill="#181C1A" height="6" width="6" x="82" y="88"></rect>
+<rect fill="#181C1A" height="8" width="8" x="100" y="88"></rect>
+<rect fill="#181C1A" height="6" width="6" x="88" y="102"></rect>
+<!-- Small Center Brand Mark -->
+<circle cx="60" cy="60" fill="#006A36" r="5"></circle>
+<circle cx="60" cy="60" fill="#FFFFFF" r="2"></circle>
+</svg>
+</div>
+<!-- Légende réglementaire -->
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px] mt-1 mb-4">
+        À présenter à la borne de contrôle pour enregistrer votre passage repas.
+      </p>
+<!-- Action Plein Écran >= 48px -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm hover:bg-primary-container active:scale-[0.99] transition-all" onclick="toggleQRModal(true)">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+        Agrandir en plein écran
+      </button>
+</div>
+</div>
+<!-- HISTORIQUE DES SOUSCRIPTIONS -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm mb-4">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Historique des souscriptions</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3 reçus</span>
+</div>
+<div class="space-y-3">
+<!-- Souscription 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Réabonnement Annuel</span>
+<span class="text-[10px] px-1.5 py-0.2 rounded bg-primary-fixed text-primary font-bold">+10 mois</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">01 Oct 2024 • Payé via Orange Money</p>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block">45 000 FCFA</span>
+<span class="inline-flex items-center gap-0.5 text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+            Validé
+          </span>
+</div>
+</div>
+<!-- Souscription 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Abonnement Semestriel</span>
+<span class="text-[10px] px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-bold">+5 mois</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">15 Jan 2024 • Payé via Moov Money</p>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block">25 000 FCFA</span>
+<span class="inline-flex items-center gap-0.5 text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+            Validé
+          </span>
+</div>
+</div>
+<!-- Souscription 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Inscription initiale</span>
+<span class="text-[10px] px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-bold">+3 mois</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">02 Oct 2023 • Guichet Cantine</p>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block">15 000 FCFA</span>
+<span class="inline-flex items-center gap-0.5 text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+            Validé
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION PARAMÈTRES & PRÉFÉRENCES -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm mb-6">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Paramètres</h3>
+</div>
+<div class="space-y-1">
+<!-- Toggle Notifications -->
+<div class="flex items-center justify-between py-3 px-1">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[22px]">notifications_active</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Rappels de service &amp; commande</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alertes menu du jour et quotas</span>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-6 rounded-full bg-primary relative transition-colors duration-200 focus:outline-none flex-shrink-0" id="toggle-notif" onclick="toggleNotification()" role="switch">
+<span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-6 transition-transform duration-200" id="toggle-dot"></span>
+</button>
+</div>
+<!-- Support & Aide Cantine -->
+<a class="flex items-center justify-between py-3 px-1 hover:bg-surface-container-low rounded-lg transition-colors group" href="tel:+22625000000">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline group-hover:text-primary text-[22px] transition-colors">support_agent</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Support &amp; Aide cantine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Assistance WhatsApp et guichet</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary text-[20px] transition-colors">chevron_right</span>
+</a>
+<!-- Bouton Déconnexion (Douceur et sécurité >= 48px) -->
+<div class="pt-3">
+<button class="w-full h-12 rounded-xl bg-error-container text-on-error-container font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-error-container/80 transition-colors" onclick="confirmLogout()">
+<span class="material-symbols-outlined text-[20px] text-error">logout</span>
+<span class="font-semibold text-error">Se déconnecter de CampusEats</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL PLEIN ÉCRAN : QR CODE HAUTE LUMINOSITÉ -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/80 backdrop-blur-md flex flex-col items-center justify-center p-4" id="modal-qr">
+<!-- Conteneur Carte QR Haute Lisibilité Scanner -->
+<div class="w-full max-w-sm bg-surface-container-lowest rounded-3xl p-6 shadow-2xl flex flex-col items-center text-center relative animate-[fade-in_0.2s_ease-out]">
+<!-- Bouton Fermeture Croix -->
+<button aria-label="Fermer" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleQRModal(false)">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<!-- Badge En-Tête -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span>Abonnement Étudiant Vérifié</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-0.5">Awa Ouédraogo</h3>
+<p class="font-body-sm text-body-sm text-outline mb-4">L2 Informatique • Joseph Ki-Zerbo</p>
+<!-- Grand QR Code avec Marge Blanche Immersion Scanner -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.08)] mb-4">
+<svg class="w-60 h-60" fill="none" viewbox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#FFFFFF" height="120" width="120"></rect>
+<!-- Outer Corner TL -->
+<rect fill="#006A36" height="32" rx="4" width="32" x="8" y="8"></rect>
+<rect fill="#FFFFFF" height="20" rx="2" width="20" x="14" y="14"></rect>
+<rect fill="#006A36" height="12" rx="1" width="12" x="18" y="18"></rect>
+<!-- Outer Corner TR -->
+<rect fill="#006A36" height="32" rx="4" width="32" x="80" y="8"></rect>
+<rect fill="#FFFFFF" height="20" rx="2" width="20" x="86" y="14"></rect>
+<rect fill="#006A36" height="12" rx="1" width="12" x="90" y="18"></rect>
+<!-- Outer Corner BL -->
+<rect fill="#006A36" height="32" rx="4" width="32" x="8" y="80"></rect>
+<rect fill="#FFFFFF" height="20" rx="2" width="20" x="14" y="86"></rect>
+<rect fill="#006A36" height="12" rx="1" width="12" x="18" y="90"></rect>
+<!-- Center Matrix Elements -->
+<rect fill="#181C1A" height="7" width="7" x="44" y="10"></rect>
+<rect fill="#181C1A" height="7" width="7" x="55" y="10"></rect>
+<rect fill="#181C1A" height="7" width="7" x="66" y="10"></rect>
+<rect fill="#181C1A" height="7" width="7" x="44" y="22"></rect>
+<rect fill="#181C1A" height="7" width="7" x="66" y="22"></rect>
+<rect fill="#181C1A" height="7" width="7" x="55" y="32"></rect>
+<rect fill="#181C1A" height="7" width="7" x="10" y="46"></rect>
+<rect fill="#181C1A" height="7" width="7" x="22" y="46"></rect>
+<rect fill="#181C1A" height="7" width="7" x="34" y="46"></rect>
+<rect fill="#006A36" height="10" rx="2" width="10" x="46" y="46"></rect>
+<rect fill="#006A36" height="10" rx="2" width="10" x="64" y="46"></rect>
+<rect fill="#181C1A" height="7" width="7" x="82" y="46"></rect>
+<rect fill="#181C1A" height="7" width="7" x="104" y="46"></rect>
+<rect fill="#181C1A" height="7" width="7" x="10" y="58"></rect>
+<rect fill="#181C1A" height="7" width="7" x="28" y="58"></rect>
+<rect fill="#181C1A" height="7" width="7" x="46" y="58"></rect>
+<rect fill="#181C1A" height="7" width="7" x="68" y="58"></rect>
+<rect fill="#181C1A" height="7" width="7" x="86" y="58"></rect>
+<rect fill="#181C1A" height="7" width="7" x="104" y="58"></rect>
+<rect fill="#181C1A" height="7" width="7" x="46" y="74"></rect>
+<rect fill="#181C1A" height="7" width="7" x="58" y="74"></rect>
+<rect fill="#181C1A" height="7" width="7" x="46" y="86"></rect>
+<rect fill="#181C1A" height="7" width="7" x="68" y="86"></rect>
+<rect fill="#181C1A" height="7" width="7" x="55" y="98"></rect>
+<rect fill="#181C1A" height="7" width="7" x="84" y="74"></rect>
+<rect fill="#181C1A" height="7" width="7" x="96" y="74"></rect>
+<rect fill="#181C1A" height="7" width="7" x="84" y="86"></rect>
+<rect fill="#181C1A" height="9" width="9" x="102" y="86"></rect>
+<rect fill="#181C1A" height="7" width="7" x="90" y="100"></rect>
+<!-- Campus Seal in QR -->
+<circle cx="60" cy="60" fill="#006A36" r="7"></circle>
+<circle cx="60" cy="60" fill="#FFFFFF" r="3"></circle>
+</svg>
+</div>
+<!-- Code d'enregistrement de secours -->
+<div class="bg-surface-container py-2 px-4 rounded-xl w-full mb-3">
+<span class="font-body-sm text-body-sm text-outline block">Matricule vérifié</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-widest font-mono">ETU-2024-BF9412</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Réglez la luminosité de l'écran au maximum face au scanner de caisse.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  // Initialisation active de l'onglet Profil dans la bottom nav
+  (function activateProfileTab() {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      const isProfile = link.getAttribute('data-path') === 'profil';
+      const iconContainer = link.querySelector('div');
+      const label = link.querySelector('span:not(.material-symbols-outlined)');
+      const icon = link.querySelector('.material-symbols-outlined');
+
+      if (isProfile) {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('text-primary', 'font-semibold');
+        if (iconContainer) iconContainer.classList.add('bg-primary-fixed');
+        if (icon) icon.style.fontVariationSettings = "'FILL' 1";
+      } else {
+        link.classList.remove('text-primary', 'font-semibold');
+        link.classList.add('text-on-surface-variant');
+        if (iconContainer) iconContainer.classList.remove('bg-primary-fixed');
+        if (icon && !link.getAttribute('data-path').includes('qr')) icon.style.fontVariationSettings = "'FILL' 0";
+      }
+    });
+  })();
+
+  // Gestion des États (Demo Switcher)
+  const states = {
+    nominal: {
+      btnId: 'btn-state-nominal',
+      headerBadge: '<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>En règle',
+      headerBadgeClass: 'bg-primary-fixed text-on-primary-fixed',
+      statusTitle: 'Abonnement annuel actif',
+      statusPill: 'Actif',
+      statusPillClass: 'bg-primary-fixed text-primary',
+      statusIcon: 'verified_user',
+      statusIconBg: 'bg-primary-fixed text-primary',
+      validity: "Valable jusqu'au 30/01/2027",
+      daysLeft: '420 jours restants',
+      progressWidth: '85%',
+      progressBarClass: 'bg-primary',
+      venue: 'Valable pour tous les déjeuners à la Cantine Centrale',
+      showAlert: false,
+      showRenew: false
+    },
+    alert: {
+      btnId: 'btn-state-alert',
+      headerBadge: '<span class="material-symbols-outlined text-[13px]">warning</span>Exp. imminente',
+      headerBadgeClass: 'bg-secondary-container text-on-secondary-container',
+      statusTitle: 'Abonnement sur le point d\'expirer',
+      statusPill: 'Expire dans 5 jours',
+      statusPillClass: 'bg-error-container text-error',
+      statusIcon: 'alarm',
+      statusIconBg: 'bg-error-container text-error',
+      validity: "Valable jusqu'au 20/03/2025",
+      daysLeft: 'Plus que 5 jours restants',
+      progressWidth: '95%',
+      progressBarClass: 'bg-secondary-container',
+      venue: 'Cantine Centrale • Renouvellement immédiat conseillé',
+      showAlert: true,
+      showRenew: true
+    },
+    foner: {
+      btnId: 'btn-state-foner',
+      headerBadge: '<span class="material-symbols-outlined text-[13px]">school</span>Boursier État',
+      headerBadgeClass: 'bg-primary text-on-primary',
+      statusTitle: 'Forfait FONER État (Subvention 50%)',
+      statusPill: 'Boursier FONER',
+      statusPillClass: 'bg-primary-fixed text-primary',
+      statusIcon: 'workspace_premium',
+      statusIconBg: 'bg-primary text-on-primary',
+      validity: "Accès automatique garanti • Année 2024-2025",
+      daysLeft: 'Quota subventionné actif',
+      progressWidth: '100%',
+      progressBarClass: 'bg-primary-container',
+      venue: 'Subventionné à 50% par le FONER • Repas illimité Cantine Joseph Ki-Zerbo',
+      showAlert: false,
+      showRenew: false
+    }
+  };
+
+  function switchState(stateKey) {
+    const data = states[stateKey];
+    if (!data) return;
+
+    // Reset styles boutons switcher
+    ['btn-state-nominal', 'btn-state-alert', 'btn-state-foner'].forEach(id => {
+      const btn = document.getElementById(id);
+      btn.className = "py-2 px-1 text-center rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface flex flex-col items-center justify-center";
+    });
+    const activeBtn = document.getElementById(data.btnId);
+    activeBtn.className = "py-2 px-1 text-center rounded-md font-label-sm text-label-sm transition-all bg-surface-container-lowest text-primary shadow-sm flex flex-col items-center justify-center font-bold";
+
+    // Application des valeurs
+    const headerBadge = document.getElementById('header-badge');
+    headerBadge.innerHTML = data.headerBadge;
+    headerBadge.className = "px-2 py-0.5 rounded-full font-label-sm text-label-sm inline-flex items-center gap-1 flex-shrink-0 " + data.headerBadgeClass;
+
+    document.getElementById('status-title').textContent = data.statusTitle;
+    const pill = document.getElementById('status-pill');
+    pill.textContent = data.statusPill;
+    pill.className = "px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold " + data.statusPillClass;
+
+    const iconBg = document.getElementById('status-icon-bg');
+    iconBg.className = "w-8 h-8 rounded-full flex items-center justify-center " + data.statusIconBg;
+    document.getElementById('status-icon').textContent = data.statusIcon;
+
+    document.getElementById('status-validity').textContent = data.validity;
+    document.getElementById('status-days').textContent = data.daysLeft;
+
+    const bar = document.getElementById('status-progress-bar');
+    bar.style.width = data.progressWidth;
+    bar.className = "h-full rounded-full transition-all duration-500 " + data.progressBarClass;
+
+    document.getElementById('status-venue').textContent = data.venue;
+
+    const alertBanner = document.getElementById('alert-banner');
+    if (data.showAlert) {
+      alertBanner.classList.remove('hidden');
+    } else {
+      alertBanner.classList.add('hidden');
+    }
+
+    const btnRenew = document.getElementById('btn-renew');
+    if (data.showRenew) {
+      btnRenew.classList.remove('hidden');
+    } else {
+      btnRenew.classList.add('hidden');
+    }
+  }
+
+  // Copie Matricule
+  function copyMatricule() {
+    const matricule = "ETU-2024-BF9412";
+    navigator.clipboard?.writeText(matricule);
+    const toast = document.getElementById('toast-copy');
+    const copyIcon = document.getElementById('copy-icon');
+
+    copyIcon.textContent = 'check';
+    toast.classList.remove('hidden');
+    toast.classList.add('flex');
+
+    setTimeout(() => {
+      copyIcon.textContent = 'content_copy';
+      toast.classList.add('hidden');
+      toast.classList.remove('flex');
+    }, 2000);
+  }
+
+  // Ouverture / Fermeture Modal QR
+  function toggleQRModal(show) {
+    const modal = document.getElementById('modal-qr');
+    if (show) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    } else {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Toggle Notification
+  let notifActive = true;
+  function toggleNotification() {
+    notifActive = !notifActive;
+    const btn = document.getElementById('toggle-notif');
+    const dot = document.getElementById('toggle-dot');
+    
+    if (notifActive) {
+      btn.className = "w-12 h-6 rounded-full bg-primary relative transition-colors duration-200 focus:outline-none flex-shrink-0";
+      dot.className = "block w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-6 transition-transform duration-200";
+      btn.setAttribute('aria-checked', 'true');
+    } else {
+      btn.className = "w-12 h-6 rounded-full bg-surface-container-highest relative transition-colors duration-200 focus:outline-none flex-shrink-0";
+      dot.className = "block w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-1 transition-transform duration-200";
+      btn.setAttribute('aria-checked', 'false');
+    }
+  }
+
+  // Déconnexion Feedback
+  function confirmLogout() {
+    if (confirm("Souhaitez-vous vous déconnecter de CampusEats ? Vos cartes et identifiants resteront sauvegardés.")) {
+      alert("Déconnexion effectuée. Redirection vers l'accueil...");
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(27,31,29,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs max-w-md mx-auto"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-primary transition-colors group" data-path="accueil" href="#"><div class="flex items-center justify-center w-12 h-7 rounded-full group-[.active]:bg-primary-fixed"><span class="material-symbols-outlined text-[22px]">restaurant</span></div><span class="font-label-sm text-label-sm leading-none mt-1">Accueil</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-primary transition-colors group" data-path="commandes" href="#"><div class="flex items-center justify-center w-12 h-7 rounded-full group-[.active]:bg-primary-fixed"><span class="material-symbols-outlined text-[22px]">receipt_long</span></div><span class="font-label-sm text-label-sm leading-none mt-1">Commandes</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-primary transition-colors group" data-path="mon-qr" href="#"><div class="relative flex items-center justify-center w-12 h-7 rounded-full group-[.active]:bg-secondary-container/20"><span class="material-symbols-outlined text-[24px] text-secondary font-bold">qr_code_2</span><span class="absolute -top-1 -right-0.5 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span></span></div><span class="font-label-sm text-label-sm leading-none mt-1 text-secondary font-semibold">Mon QR</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-primary transition-colors group" data-path="profil" href="#"><div class="flex items-center justify-center w-12 h-7 rounded-full group-[.active]:bg-primary-fixed"><span class="material-symbols-outlined text-[22px]">person</span></div><span class="font-label-sm text-label-sm leading-none mt-1">Profil</span></a></div></nav></body></html>
